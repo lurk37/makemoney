@@ -55,7 +55,7 @@ def get_company_info_and_news(종목코드, 종목명):
     return summary, news_list
 
 def get_all_trading_dates():
-    csv_files = glob('./sise_csv/*.csv')
+    csv_files = glob('.\sise_csv\*.csv')
     if not csv_files:
         raise FileNotFoundError('sise_csv 폴더에 CSV 파일이 없습니다.')
     
